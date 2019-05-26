@@ -1,1 +1,0 @@
-"Create ec2 from SDK & Stop Ec2 using lambda" 
