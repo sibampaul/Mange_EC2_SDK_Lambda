@@ -10,10 +10,10 @@ def lambda_handler(event, context):
      for reservation in response["Reservations"]:
 
          for instance in reservation["Instances"]:
-
+a
              id=[instance["InstanceId"]]
 
 
-             if instance["State"]["Name"]=="running":
+             if instance["State"]["Name"]=="stopped":
 
-                 ec2.stop_instances(InstanceIds=id)
+                 ec2.start_instances(InstanceIds=id)
